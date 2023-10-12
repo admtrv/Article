@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{Coplien:MPD}
+James~O. Coplien.
+\newblock {\em Multi-Paradigm Design for C++}.
+\newblock Addison-Wesley, 1999.
+
+\bibitem{Czarnecki:Staged}
+Krzysztof Czarnecki, Simon Helsen, and Ulrich Eisenecker.
+\newblock Staged configuration through specialization and multi-level
+  configuration of feature models.
+\newblock {\em Software Process: Improvement and Practice}, 10:143--169,
+  April/June 2005.
+
+\bibitem{Czarnecki:Progress}
+Krzysztof Czarnecki and Chang Hwan~Peter Kim.
+\newblock Cardinality-based feature modeling and constraints: A progress
+  report.
+\newblock In {\em International Workshop on Software Factories, OOPSLA 2005},
+  San Diego, USA, October 2005.
+
+\bibitem{PLP-Framework}
+Carnegie Mellon~University Software Engineering~Institute.
+\newblock A framework for software product line practice---version 5.0.
+\newblock \url{http://www.sei.cmu.edu/productlines/frame_report/}.
+
+\end{thebibliography}

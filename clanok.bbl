@@ -1,3 +1,36 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Behr2010}
+Franz-Josef Behr.
+\newblock {A prototype digital cadastral information system for the survey of
+  Kenya}.
+\newblock In {\em {Applied geoinformatics for society and environment: Third
+  international summer school and conference}}, pages 111--122, January 2010.
+
+\bibitem{Forrest2021}
+Matt Forrest.
+\newblock {A Brief History of Web Maps}.
+\newblock \url{https://forrest.nyc/a-brief-history-of-web-maps/}, March 2021.
+
+\bibitem{Goldberg2007}
+Daniel~W Goldberg, John~P Wilson, and Craig~A Knoblock.
+\newblock From text to geographic coordinates: the current state of geocoding.
+\newblock {\em URISA journal}, 19(1):33--46, 2007.
+
+\bibitem{Leclerc1994}
+Y.G. Leclerc and S.Q. Lau.
+\newblock Terravision: A terrain visualization system.
+\newblock {\em SRI International, Technical Note}, 540:20, 1994.
+
+\bibitem{Mehta2019}
+Heeket Mehta, Pratik Kanani, and Priya Lande.
+\newblock Google maps.
+\newblock {\em International Journal of Computer Applications}, 178(8):41--46,
+  May 2019.
+
+\bibitem{Mitchell2005}
+Tyler Mitchell.
+\newblock {\em {Web Mapping Illustrated: Using Open Source GIS Toolkits}}.
+\newblock O’Reilly, 2005.
 
 \end{thebibliography}

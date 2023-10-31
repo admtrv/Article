@@ -4,47 +4,45 @@ The top-level auxiliary file: clanok.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-I found no \citation commands---while reading file clanok.aux
 Database file #1: literatura.bib
-You've used 0 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3995 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            543 strings with 4929 characters,
+and the built_in function-call counts, 1816 in all, are:
+= -- 176
+> -- 70
+< -- 1
++ -- 28
+- -- 22
+* -- 116
+:= -- 303
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 6
+duplicate$ -- 75
+empty$ -- 157
+format.name$ -- 22
+if$ -- 385
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 23
 quote$ -- 0
-skip$ -- 1
+skip$ -- 55
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 102
+swap$ -- 16
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 22
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 19
+width$ -- 7
+write$ -- 66

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.8)  31 OCT 2023 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.8)  31 OCT 2023 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,43 +406,79 @@ File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 30.
 
-(clanok.bbl
+[1
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+{C:/Users/DAnto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+[3]
+(C:\Users\DAnto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\DAnto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\DAnto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 98.
+LaTeX Font Info:    Font shape `IL2/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `IL2/cmtt/m/n' tried instead on input line 100.
 
-) [1
+[4]
+<diagram1.pdf, id=121, 230.8625pt x 592.2125pt>
+File: diagram1.pdf Graphic file (type pdf)
+<use diagram1.pdf>
+Package pdftex.def Info: diagram1.pdf  used on input line 134.
+(pdftex.def)             Requested size: 115.43095pt x 296.10551pt.
 
-{C:/Users/DAnto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(clanok.aux)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(clanok.bbl [5]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+[]\IL2/cmr/m/n/10 Matt For-rest.  A Brief His-tory of Web Maps.  []$\IL2/cmtt/m
+/n/10 https : / / forrest . nyc /
+ []
+
+) [6 <./diagram1.pdf>] (clanok.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `clanok.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 0612EDED701CDCC41711341A24856BF9;3066.
  ) 
 Here is how much of TeX's memory you used:
- 11723 strings out of 475247
- 184830 string characters out of 5757792
- 1925785 words of memory out of 5000000
- 33107 multiletter control sequences out of 15000+600000
- 567826 words of font info for 60 fonts, out of 8000000 for 9000
+ 12316 strings out of 475247
+ 191334 string characters out of 5757792
+ 1950785 words of memory out of 5000000
+ 33634 multiletter control sequences out of 15000+600000
+ 570260 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,949b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1014b,1301s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\c
-sr10.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dp
-i600\csr8.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\tcrm0600.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public
-/csfonts/dpi720\csbx12.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour
-/public/csfonts/dpi600\csbx9.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/
-ljfour/public/csfonts/dpi600\cstt9.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/public/csfonts/dpi600\csr9.pk> <C:\Users\DAnto\AppData\Local\MiKTe
-X\fonts/pk/ljfour/public/csfonts/dpi600\csr12.pk> <C:\Users\DAnto\AppData\Local
-\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\DAnto\AppData
-\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr17.pk>
-Output written on clanok.pdf (1 page, 51632 bytes).
+stt10.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/d
+pi600\csti10.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
+ec/dpi600\tcrm1000.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
+lic/csfonts/dpi600\cssl10.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljf
+our/public/csfonts/dpi600\csr8.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\tcrm0600.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\f
+onts/pk/ljfour/public/csfonts/dpi600\csbx12.pk> <C:\Users\DAnto\AppData\Local\M
+iKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr10.pk> <C:\Users\DAnto\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi720\csbx12.pk> <C:\Users\DAnto\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csbx9.pk> <C:\Users\DA
+nto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\cstt9.pk> <C:\Us
+ers\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr9.pk> <
+C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/dpi600\csr12
+.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
+rm1200.pk> <C:\Users\DAnto\AppData\Local\MiKTeX\fonts/pk/ljfour/public/csfonts/
+dpi600\csr17.pk>
+Output written on clanok.pdf (6 pages, 178798 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

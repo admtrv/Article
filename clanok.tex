@@ -11,7 +11,7 @@
 
 \pagestyle{headings}
 
-\title{How online maps search works: technologies, algorithms and inner structure.
+\title{How Online Maps Search Works: Technologies, Algorithms and Internal Structure.
 \thanks{Semester project in the subject Methods of engineering work, academic year 2023/24, leadership: PaedDr. Pavol Batalik}}
 
 \author{Anton Dmitriev\\[2pt]
@@ -35,16 +35,23 @@
 
 
 \section{Introduction}
-Since the beginning of exploration of our still undiscovered planet Earth, people have worked hard to record the geographical details of the terrain and the routes of their travels. They did this in order to store information that could be used to further improve navigation (more about the history of cartography in Part 2). The map became a convenient tool for such tasks. However, creating even a single map was a slow and labor-intensive process for the human capabilities of that time. Digital maps, thanks to the ever-increasing availability of computing power, have opened up entirely new possibilities in the field of cartography. Now, after going through this arduous journey of improvements and transformations, a click of the mouse is enough for a computer to plot a user's route from point A to a given point B. "Digital mapping - from the global positioning system (GPS) in your car to the Web site that displays local bus routes - is on the rise"\cite{Mitchell2005}.
-\\The Internet, which has become a source for the development of new technologies, provides the average user with just a convenient online map interface. However, not everyone realizes that behind this attractive skin there is a complex mechanism consisting of many interacting high-tech and modern solutions (More about this mechanism in Part~\ref{internal}).
+Since the beginning of exploration of our still undiscovered planet Earth, people have worked hard to record the geographical details of the terrain and the routes of their travels. They did this in order to store information that could be used to further improve navigation (More about the History of Cartography in Part ~\ref{history:brief}). The map became a convenient tool for such tasks. However, creating even a single map was a slow and labor-intensive process for the human capabilities of that time. Digital maps, thanks to the ever-increasing availability of computing power, have opened up entirely new possibilities in the field of cartography. Now, after going through this arduous journey of improvements and transformations, a click of the mouse is enough for a computer to plot a user's route from point A to a given point B. "Digital mapping - from the global positioning system (GPS) in your car to the Web site that displays local bus routes - is on the rise" - \cite{Mitchell2005}.
+\\The Internet, which has become a source for the development of new technologies, provides the average user with just a convenient online map interface. However, not everyone realizes that behind this attractive skin there is a complex mechanism consisting of many interacting high-tech and modern solutions, designed for easy search by geographical data (More about this mechanism in Part~\ref{internal}).
 
 
-\section{History of online maps development} \label{history}
+\section{History of Online Maps Development} \label{history}
 
 \subsection{A Brief Background in Cartography} \label{history:brief}
 In order to understand modern online maps, it is crucial to delve into the historical roots of cartography. Cartography is a captivating blend of science and art, endeavoring to depict the world as accurately as possible while grappling with the challenge of what to include or leave out. This challenge pertains not only to geographical features but also extends to the selection of a map projection, a pivotal aspect in transforming the spherical Earth into a flat map.
 \\Early cartography involved the creation of maps that primarily served navigational purposes. For instance, Polynesian and Micronesian voyagers crafted intricate stick charts to map connections between islands and interpret swell patterns. Portuguese explorers, on the other hand, produced detailed coastal maps that often left the interiors largely blank since their focus was on exploration and seafaring.
 \\In 1569, Flemish cartographer Gerardus Mercator introduced a revolutionary map projection\cite{Forrest2021}, which was designed to assist sailors in plotting a straight-line course between any two points. The Mercator projection, or variations thereof, remains the dominant choice in online mapping today due to its ability to depict the entire globe on a nearly square image. However, it comes with a trade-off, introducing size distortions, making it appear as if Greenland is comparable in size to the entire African continent, when in reality, Africa is roughly 14 times larger than Greenland.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{diagram4.png}
+	\caption{Difference between Mercator Projection and Reality}
+	\label{fig:mercator}
+\end{figure}
 
 \subsection{The First Maps on the Web} \label{history:firstweb}
 The emergence of online mapping can be traced back to the early days of the internet. While pinpointing the very first online map is challenging, the transition from static map images to interactive web maps marked a significant milestone. Interactive web maps empowered users, allowing them to control their exploration—zooming in and out, toggling map layers, and more.
@@ -58,8 +65,16 @@ In 1996, Mapquest and Multimap, both launched in the same year, marked the adven
 
 \subsection{Google Maps: A Game-Changer} \label{history:gamechanger}
 Google entered the web mapping arena and turned the tables in 2005 with the launch of Google Maps. Google Maps incorporated groundbreaking features like satellite imagery and an interactive interface, which garnered rapid popularity. 
-\\Key to the success of Google Maps was its use of map tiles, small square images that made up the larger map, and the utilization of the Mercator projection~\ref{history:brief}. These tiles allowed for faster loading times and efficient use of resources. Moreover, Google's innovative map tiles were capable of rendering different zoom levels, further enhancing the user experience. %(more about how tiles works in 3 или 4 или 5 или отдельно я не ебу)
-\\Google Maps didn't stop at providing directions but went a step further by introducing a blue dot to indicate a user's precise location. This feature opened the door to a new industry centered around location, with services like Foursquare and Yelp leveraging location data for various purposes, from reviews to recommendations.
+\\Key to the success of Google Maps was its use of map tiles, small square images that made up the larger map, and the utilization of the Mercator projection~\ref{history:brief}. These tiles allowed for faster loading times and efficient use of resources. Moreover, Google's innovative map tiles were capable of rendering different zoom levels, further enhancing the user experience.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{diagram5.png}
+	\caption{Map Tiles at Different Zoom Levels}
+	\label{fig:tiles}
+\end{figure}
+
+Google Maps didn't stop at providing directions but went a step further by introducing a blue dot to indicate a user's precise location (Due to Location Positioning Technologies ~\ref{internal:gps}). This feature opened the door to a new industry centered around location, with services like Foursquare and Yelp leveraging location data for various purposes, from reviews to recommendations.
 
 \subsection{Terravision: A Pioneering 3D World Mapping Software} \label{history:patentrights}
 It would seem that we all know the most popular online mapping service such as Google Maps (originally Google Earth). But there were some dark places in its history of creation. Terravision\cite{Leclerc1994} was a one of the firs 3D world mapping software program developed by a group of German university students from ART+COM, including Jachim Sauter and Juri Muller. Launched in 1993, Terravision aimed to provide a networked, virtual, and graphical representation of Earth using 3D graphics. Juri Muller, as the chief programmer, was responsible for inventing the algorithms that powered the software. Joachim Sauter, on the other hand, focused on the program's design and artistic elements. The result was a unique fusion of art and technology.
@@ -77,7 +92,7 @@ The transformation of web maps continued with the introduction of vector tiles, 
 \\Vector tiles were especially well-suited for the mobile environment and were made possible through technologies like WebGL, which enhanced graphics rendering in browsers. This innovation allowed developers to create map-based applications with greater efficiency and flexibility.
 \\Web mapping saw a pivotal moment when Uber sought to visualize its extensive ride data. Faced with vast amounts of ride records, Uber embarked on the development of tools that could efficiently handle and visually represent massive datasets. One of the outcomes was Deck.gl, a framework for rendering large-scale data visualizations on maps. This open-source project opened doors for data visualization in various fields, from urban planning to spatial analytics.
 
-\section{Internal structure} \label{internal}
+\section{Internal Structure} \label{internal}
 
 \subsection{Shortest Path from Point A to Point B} \label{internal:dijikstra}
 Google Maps utilizes graph data structures to compute the shortest route from a source point (point A) to a destination (point B). A graph data structure is composed of numerous nodes interconnected by multiple edges. Edsger W. Dijkstra introduced the Dijkstra's algorithm, an efficient method for determining the shortest distance and path to a specified destination. In this graph, nodes are linked by weighted edges, which signify the distance required to travel to each node. 
@@ -131,7 +146,7 @@ Geocoding is a fundamental component of spatial analysis that has found applicat
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{diagram1.pdf}
+	\includegraphics[scale=0.45]{diagram1.pdf}
 	\caption{Process of Geocoding}
 	\label{fig:geocoding}
 \end{figure}
@@ -148,6 +163,58 @@ So modern online maps make extensive use of geocoding to provide location inform
 Geocoding plays an important role in the functionality of modern online maps, making it a powerful tool for navigating, finding places, and getting information about geographic locations. Accurate geocoding can greatly enrich the user experience and help find information about the world around them. 
 
 \subsection{Location Detection: You Can't Hide from It} \label{internal:gps}
+Global Positioning System (GPS) - is an U.S. Government-owned satellite utility that provides users with positioning, navigation, and timing services\cite{GPS.gov}.
+\\The idea of GPS originated in the second half of the 20th century. In 1957, the USSR launched the first artificial satellite, which was the beginning of the space age. This inspired the US to develop a satellite navigation system. The GPS development project began in 1973 when the US announced a global navigation system. The first GPS satellite was launched in 1978 and the system was operational within a few years.
+\\GPS was originally developed for military purposes to provide accurate positioning and navigation for the armed forces. Thereafter, access to the system was opened up for civilian use. As the system began to be opened up for civilian use, GPS became an integral part of everyday life. It is used for navigation on roads, in aviation, maritime, and in geopositioning-related applications and websites, such as online maps.
+\\GPS is based on the idea of triangulating a point in space. To determine the position of a point in space, it is sufficient to know the distance from it to three other points with known coordinates. In geodesy and radio communications, this is called triangulation - when we can use the coordinates of three points to calculate where the fourth (our) point is. In mobile phones without a GPS module, it works like this:
+
+\begin{enumerate}
+\item The mobile phone picks up signals from three radio communication towers.
+\item These signals transmit, among other things, the coordinates of the towers themselves.
+\item The mobile phone measures the time it takes for the signal to reach each tower.
+\item Based on this time, it calculates the coordinates of its location with an accuracy of 10-20 meters.
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{diagram2.pdf}
+	\caption{Visual Example of Triangulation}
+	\label{fig:triangulation}
+\end{figure}
+
+Now that we know the basic idea, we move to satellites. In GPS positioning, instead of communication towers there are satellites. The task of such a satellite is to constantly transmit its coordinates, time information and other service data to the ground. All this is sent from the satellite in the form of radio signals at a frequency of about 1.5 gigahertz at a rate of 50 bits per second. Constantly and 24 hours a day, 7 days a week. To calculate the exact distance to the satellite, you need to measure the signal travel time very accurately. To do this, an atomic clock is placed in each satellite that transmits time with an accuracy of 10$^{-11}$ seconds. This allows you to calculate the position of each satellite with an accuracy of a few meters. 
+\\For the work of GPS in phones is responsible for a separate radio module - it is tuned to the frequencies of satellites, and it has all the necessary algorithms for calculations. And now we can use the logic of triangulation, which in the case of satellites is called trilateration\cite{Bajaj2002}:
+
+\begin{enumerate}
+\item The phone gets a signal from the first satellite, but that doesn't give it anything.
+\item After receiving a signal from the second satellite, the phone realizes the approximate circle in which it is located. The circle can be a hundred kilometers in diameter, so there are no exact coordinates yet.
+\item After the signal from the third satellite, the phone can calculate the approximate location with an accuracy of about 10 meters.
+\item But after the signal from the fourth and all subsequent satellites - with an accuracy of one meter.
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.07]{diagram3.png}
+	\caption{Visual Example of a 3-satellite GPS Constellation}
+	\label{fig:trilateration}
+\end{figure}
+
+
+GPS - the first, but not the only global positioning system. Now there are three more such systems of this level working in the world. They have different operating frequencies, but the same principle of operation:
+
+\begin{itemize}
+\item GLONASS is a Russian system with 27 satellites (GPS has 32). It has higher accuracy than GPS;
+\item Beidou - belongs to China, now it includes 15 satellites - this is the minimum number for stable navigation;
+\item Galileo - European system, 23 satellites.
+\end{itemize}
+
+What system to work with - depends on what module is in the receiver (in the phone or navigator). Now most smartphones support all systems except Galileo, which means that 20-30 satellites can be used for positioning. This does not give an increase in accuracy, but it gives reliability - if the satellites of one system are unavailable, you can navigate by the others. As a result, GPS is integrated into online maps to provide users with accurate and convenient interaction with location and navigation data, making the use of maps in everyday life more convenient and efficient.
+{\tiny }
+\section{Data Structure} \label{data}
+
+\section{The Future of Online Mapping} \label{future}
+
+\section{Conclusion} \label{conclusion}
 
 
 \bibliography{literatura}

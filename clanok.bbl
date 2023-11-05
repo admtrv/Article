@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{Bajaj2002}
+R.~Bajaj, S.L. Ranaweera, and D.P. Agrawal.
+\newblock Gps: location-tracking technology.
+\newblock {\em Computer}, 35(4):92--94, 2002.
+
 \bibitem{Behr2010}
 Franz-Josef Behr.
 \newblock {A prototype digital cadastral information system for the survey of
@@ -16,6 +21,11 @@ Matt Forrest.
 Daniel~W Goldberg, John~P Wilson, and Craig~A Knoblock.
 \newblock From text to geographic coordinates: the current state of geocoding.
 \newblock {\em URISA journal}, 19(1):33--46, 2007.
+
+\bibitem{GPS.gov}
+U.S. Government.
+\newblock {GPS Overview}.
+\newblock \url{https://www.gps.gov/systems/gps/}.
 
 \bibitem{Leclerc1994}
 Y.G. Leclerc and S.Q. Lau.

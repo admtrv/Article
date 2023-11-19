@@ -1,0 +1,5 @@
+\babel@toc {slovak}{}\relax 
+\beamer@sectionintoc {1}{História vývoja online máp}{4}{0}{1}
+\beamer@sectionintoc {2}{Interná štruktúra}{6}{0}{2}
+\beamer@sectionintoc {3}{Dátová štruktúra}{9}{0}{3}
+\beamer@sectionintoc {4}{Budúcnosť online mapovania}{11}{0}{4}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Bajaj2002}
 R.~Bajaj, S.L. Ranaweera, and D.P. Agrawal.
@@ -11,6 +11,16 @@ Franz-Josef Behr.
   Kenya}.
 \newblock In {\em {Applied geoinformatics for society and environment: Third
   international summer school and conference}}, pages 111--122, January 2010.
+
+\bibitem{Chang2016}
+Kang-tsung Chang.
+\newblock {\em { Introduction to Geographic Information Systems (9th ed.)}}.
+\newblock McGraw-Hill, 2016.
+
+\bibitem{Demers2008}
+M.N. DeMers.
+\newblock {\em {Fundamentals of Geographic Information Systems}}.
+\newblock Wiley, 2008.
 
 \bibitem{Forrest2021}
 Matt Forrest.
@@ -27,6 +37,19 @@ U.S. Government.
 \newblock {GPS Overview}.
 \newblock \url{https://www.gps.gov/systems/gps/}.
 
+\bibitem{LandId2021}
+Land id.
+\newblock {GIS Data Collection: Where it Comes From \& How it Gets There}.
+\newblock
+  \url{https://id.land/blog/gis-data-collection-where-it-comes-from-how-it-gets-there},
+  May 2021.
+
+\bibitem{Kang2023}
+Yuhao Kang, Qianheng Zhang, and Robert Roth.
+\newblock {The Ethics of AI-Generated Maps: A Study of DALL-E 2 and
+  Implications for Cartography}.
+\newblock {\em arXiv preprint arXiv:2304.10743v3}, June 2023.
+
 \bibitem{Leclerc1994}
 Y.G. Leclerc and S.Q. Lau.
 \newblock Terravision: A terrain visualization system.
@@ -42,5 +65,16 @@ Heeket Mehta, Pratik Kanani, and Priya Lande.
 Tyler Mitchell.
 \newblock {\em {Web Mapping Illustrated: Using Open Source GIS Toolkits}}.
 \newblock O’Reilly, 2005.
+
+\bibitem{Novak1995}
+Kurt Novak.
+\newblock {Mobile Mapping Technology for GIS Data Collection}.
+\newblock {\em {Photogrammetric Engineering \& Remote Sensing}},
+  61(5):493--501, May 1995.
+
+\bibitem{NovakSelfDriving}
+Vladyslav Novak.
+\newblock {Google Self-Driving Car}.
+\newblock {\em Vinnytsia National Technical University}.
 
 \end{thebibliography}

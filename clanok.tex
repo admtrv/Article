@@ -32,12 +32,9 @@
 	Modern online maps have become an integral part of our daily life, providing us with quick access to geographical information and real-time location. However, behind this wonderful opportunity lies a technically complicated system that has been developing and improving for many years. This article provides an overview of the historical and technological development of online mapping and aims to provide an understanding of how modern online maps function and how they provide users with the data they need. Readers will learn how the evolution of technologies in map data has led to the ability to quickly and accurately find places and addresses on a map. Because, in an era where mobile devices and apps are becoming an essential part of our lives, it is important to understand how these maps collect and store information about the world around us, and how they help us navigate and find the places we need.
 \end{abstract}
 
-
-
 \section{Introduction}
 Since the beginning of exploration of our still undiscovered planet Earth, people have worked hard to record the geographical details of the terrain and the routes of their travels. They did this in order to store information that could be used to further improve navigation (More about the History of Cartography in Part ~\ref{history:brief}). The map became a convenient tool for such tasks. However, creating even a single map was a slow and labor-intensive process for the human capabilities of that time. Digital maps, thanks to the ever-increasing availability of computing power, have opened up entirely new possibilities in the field of cartography. Now, after going through this arduous journey of improvements and transformations, a click of the mouse is enough for a computer to plot a user's route from point A to a given point B. "Digital mapping - from the global positioning system (GPS) in your car to the Web site that displays local bus routes - is on the rise" - \cite{Mitchell2005}.
 \\The Internet, which has become a source for the development of new technologies, provides the average user with just a convenient online map interface. However, not everyone realizes that behind this attractive skin there is a complex mechanism consisting of many interacting high-tech and modern solutions, designed for easy search by geographical data (More about this mechanism in Part~\ref{internal}).
-
 
 \section{History of Online Maps Development} \label{history}
 
@@ -65,7 +62,7 @@ In 1996, Mapquest and Multimap, both launched in the same year, marked the adven
 
 \subsection{Google Maps: A Game-Changer} \label{history:gamechanger}
 Google entered the web mapping arena and turned the tables in 2005 with the launch of Google Maps. Google Maps incorporated groundbreaking features like satellite imagery and an interactive interface, which garnered rapid popularity. 
-\\Key to the success of Google Maps was its use of map tiles, small square images that made up the larger map, and the utilization of the Mercator projection~\ref{history:brief}. These tiles allowed for faster loading times and efficient use of resources. Moreover, Google's innovative map tiles were capable of rendering different zoom levels, further enhancing the user experience.
+\\Key to the success of Google Maps was its use of map tiles, small square images that made up the larger map, and the utilization of the Mercator projection~\ref{history:brief}. These tiles allowed for faster loading times and efficient use of resources. Moreover, Google's innovative map tiles were capable of rendering different zoom levels, further enhancing the user experience~\ref{data:types}. 
 
 \begin{figure}[h]
 	\centering
@@ -88,7 +85,7 @@ While Google Maps was gaining momentum, developers were beginning to explore the
 \\The idea of overlaying data on web maps and the popularity of Google Maps inspired a new generation of mapping services and projects. Notably, OpenStreetMap (OSM) , launched in 2004, gained traction by inviting users to add or edit map features, such as roads, waterways, and points of interest. OSM, often described as the "Wikipedia for maps," fostered a global community of contributors, leading to a significant increase in data quality and coverage.
 
 \subsection{Vector Tiles and the Democratization of Mapping Data} \label{history:vector}
-The transformation of web maps continued with the introduction of vector tiles, a significant leap forward in technology. Unlike traditional map tiles that consist of static images, vector tiles contain raw geospatial data that can be rendered in real-time by the browser. This shift made maps more dynamic, allowing for smoother and more interactive map experiences.
+The transformation of web maps continued with the introduction of vector tiles (Figure~\ref{fig:vector}), a significant leap forward in technology. Unlike traditional map tiles that consist of static images, vector tiles contain raw geospatial data that can be rendered in real-time by the browser. This shift made maps more dynamic, allowing for smoother and more interactive map experiences.
 \\Vector tiles were especially well-suited for the mobile environment and were made possible through technologies like WebGL, which enhanced graphics rendering in browsers. This innovation allowed developers to create map-based applications with greater efficiency and flexibility.
 \\Web mapping saw a pivotal moment when Uber sought to visualize its extensive ride data. Faced with vast amounts of ride records, Uber embarked on the development of tools that could efficiently handle and visually represent massive datasets. One of the outcomes was Deck.gl, a framework for rendering large-scale data visualizations on maps. This open-source project opened doors for data visualization in various fields, from urban planning to spatial analytics.
 
@@ -136,12 +133,12 @@ Geocoding is a fundamental component of spatial analysis that has found applicat
 \\Geocoding is based on mapping text addresses to geographic coordinates. The process involves the following steps \cite{Behr2010}:
 
 \begin{enumerate}
-\item Receiving the request: The user enters a textual description of the location into the search box or through the map interface.
-\item Analyzing the query: The server analyzes the request, trying to understand what type of location is specified (e.g., address, place name, zip code, etc.).
-\item Database Search: The server accesses its geographic database, which contains information about millions of locations. It looks for a match between the query entered and the data in the database.
-\item Result ranking: The server returns a list of the most likely results ranked by similarity to the request. 
-\item Geographic coordinates output: The server returns the geographic coordinates (latitude and longitude) of the selected location.
-\item Display on map: The received coordinates are used to display the selected location on the map. The map is centered on that location and information about the location is shown to the user.
+\item \textbf{Receiving the request} - user enters a textual description of the location into the search box or through the map interface.
+\item \textbf{Analyzing the query} - server analyzes the request, trying to understand what type of location is specified (e.g., address, place name, zip code, etc.).
+\item \textbf{Database Search} - server accesses its geographic database, which contains information about millions of locations. It looks for a match between the query entered and the data in the database.
+\item \textbf{Result ranking} - server returns a list of the most likely results ranked by similarity to the request. 
+\item \textbf{Geographic coordinates output} - The server returns the geographic coordinates (latitude and longitude) of the selected location.
+\item \textbf{Display on map} - received coordinates are used to display the selected location on the map. The map is centered on that location and information about the location is shown to the user.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -154,10 +151,10 @@ Geocoding is a fundamental component of spatial analysis that has found applicat
 So modern online maps make extensive use of geocoding to provide location information and navigation. Here are a few scenarios of how geocoding is used in modern online maps:
 
 \begin{itemize}
-\item Searching and finding places.: Geocoding allows online map users to find places by address or keywords. A user can type in the name of a restaurant, store, or address, and online maps will convert that query into coordinates and display the location on the map.
-\item Navigation and route creation: When creating routes between two points, geocoding is used to determine the coordinates of the start and end points and to find the best route between them.
-\item Information about nearby objects: Maps use geocoding to provide information about nearby objects such as restaurants, hotels, gas stations, and other establishments. The user can see their location on the map and get more information about them.
-\item Geotagging of photos: If a user takes a photo of a location using a mobile device, the phone can use geocoding to automatically add location coordinates to the photo. This allows users to organize and find photos by location.
+\item \textbf{Searching and finding places:} Geocoding allows online map users to find places by address or keywords. A user can type in the name of a restaurant, store, or address, and online maps will convert that query into coordinates and display the location on the map.
+\item \textbf{Navigation and route creation:} When creating routes between two points, geocoding is used to determine the coordinates of the start and end points and to find the best route between them.
+\item \textbf{Information about nearby objects:} Maps use geocoding to provide information about nearby objects such as restaurants, hotels, gas stations, and other establishments. The user can see their location on the map and get more information about them.
+\item \textbf{Geotagging of photos:} If a user takes a photo of a location using a mobile device, the phone can use geocoding to automatically add location coordinates to the photo. This allows users to organize and find photos by location.
 \end{itemize}
 
 Geocoding plays an important role in the functionality of modern online maps, making it a powerful tool for navigating, finding places, and getting information about geographic locations. Accurate geocoding can greatly enrich the user experience and help find information about the world around them. 
@@ -199,24 +196,130 @@ Now that we know the basic idea, we move to satellites. In GPS positioning, inst
 	\label{fig:trilateration}
 \end{figure}
 
-
 GPS - the first, but not the only global positioning system. Now there are three more such systems of this level working in the world. They have different operating frequencies, but the same principle of operation:
 
 \begin{itemize}
-\item GLONASS is a Russian system with 27 satellites (GPS has 32). It has higher accuracy than GPS;
-\item Beidou - belongs to China, now it includes 15 satellites - this is the minimum number for stable navigation;
-\item Galileo - European system, 23 satellites.
+\item \textbf{GLONASS} is a Russian system with 27 satellites (GPS has 32). It has higher accuracy than GPS;
+\item \textbf{Beidou} - belongs to China, now it includes 15 satellites - this is the minimum number for stable navigation;
+\item \textbf{Galileo} - European system, 23 satellites.
 \end{itemize}
 
 What system to work with - depends on what module is in the receiver (in the phone or navigator). Now most smartphones support all systems except Galileo, which means that 20-30 satellites can be used for positioning. This does not give an increase in accuracy, but it gives reliability - if the satellites of one system are unavailable, you can navigate by the others. As a result, GPS is integrated into online maps to provide users with accurate and convenient interaction with location and navigation data, making the use of maps in everyday life more convenient and efficient.
-{\tiny }
+
 \section{Data Structure} \label{data}
 
+\subsection {Geographic Data Management Tool} \label{data:gis}
+Geographic Information Systems (GIS) are complex tools that collect, store, process, analyze, and visualize data associated with specific geographic coordinates \cite{LandId2021}. GIS data is not just a collection of information; it is a way of understanding and interpreting landscapes, weather patterns, populations, and other important aspects of an area. In the context of online maps, this data helps in creating detailed, interactive and feature-rich map products.
+
+\subsection {Types of GIS Data} \label{data:types}
+GIS data is categorized broadly into two types, each with distinct characteristics and applications\cite{Chang2016}:
+
+\textbf{Raster Data:} This type of data is composed of a grid of cells, or pixels, each representing a specific area on the earth's surface (Figure~\ref{fig:tiles}). These pixels encode information like color, temperature, or elevation. Raster data is integral to satellite imagery and aerial photography, offering a macroscopic view of geographic areas. It is particularly useful in environmental monitoring, urban development analysis, and tracking landscape changes over time.
+
+\textbf{Vector Data:} Vector data, in contrast, uses geometric shapes—points, lines, and polygons—to represent spatial features. This data type excels in depicting discrete elements such as road networks, building outlines, and water bodies. Its precision in detailing exact locations and boundaries makes vector data a critical resource in areas like city planning, transportation infrastructure, and geographic boundary delineation.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\textwidth]{diagram6a.jpg}
+	\hfill
+	\includegraphics[width=0.45\textwidth]{diagram6b.jpg}
+	\caption{Two Different Vector Tiles}
+	\label{fig:vector}
+\end{figure}
+
+\subsection {Methods and Sources of Data Collection} \label{data:sources}
+
+The collection of GIS data employs a variety of methods, each tailored to capture different aspects of spatial information \cite{Demers2008}:
+
+\begin{itemize}
+\item \textbf{Remote Sensing:} This involves the acquisition of data from satellite or aerial platforms \cite{Novak1995}. Remote sensing is particularly effective for gathering extensive raster data, providing a wide-angle view of earth’s topography and environmental conditions. It is a key tool in large-scale environmental assessment, climate change studies, and disaster management.
+
+\item \textbf{Aerial Photography:} Capturing high-resolution images from the air, aerial photography is instrumental in creating detailed topographic maps and landscape analyses. It finds applications in agriculture for crop assessment, urban planning, and environmental conservation efforts.
+
+\item \textbf{LiDAR (Light Detection and Ranging):} LiDAR technology (Figure~\ref{fig:lidar}) uses laser pulses to measure distances and generate precise three-dimensional models of the earth's surface. It is highly valued in surveying, forestry management, and infrastructure development, particularly for its accuracy in terrain modeling and elevation assessment.
+
+\item \textbf{Ground Surveys:} Ground surveys provide the highest accuracy for vector data collection, especially for detailed measurements of land parcels, infrastructure, and urban layouts. They are conducted using traditional surveying techniques, measuring angles and distances from established reference points.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.2]{diagram9.png}
+	\caption{LiDAR Technology}
+	\label{fig:lidar}
+\end{figure}
+
+\end{itemize}
+
+Moreover, with the advancement of technology, now anyone can contribute to the data of online maps, like Google Maps. Users can add panoramic street images using 360-degree cameras, enriching the maps with detailed visual representations of locations. Additionally, drone photography allows for the capture of unique aerial images, aiding in the update and refinement of maps in hard-to-reach or rapidly changing areas. These methods expand the capabilities of geographic data collection, making maps more accurate and informative.
+
+\subsection {Transition from Multiplicity to Unity} \label{data:integrating}
+The process of integrating GIS data into a unified view displayed in online maps like Google Maps requires complex conversion and synchronization of data from multiple sources:
+
+\begin{enumerate}
+\item \textbf{Converting Formats:} Different GIS data sources may have different formats. Digitalization converts paper maps and documents into digital formats. Vectorization converts raster images into vector data, allowing for more accurate processing and integration of information.
+
+\item \textbf{Standardization and Synchronization:} Data are normalized to a common scale, projection and coordinate system. This ensures their compatibility and allows data from different sources to be combined into one consistent map.
+
+\item \textbf{Merging and Visualization:} Different data layers such as topography, weather conditions, road networks and demographic information are merged to create layered maps. Once integrated, the data is visualized in a user-friendly way, providing an interactive and informative online map experience.
+
+\item \textbf{Updating and Monitoring:} Online maps are updated regularly to reflect changes in geographic information. This requires constant monitoring and updating of data, which is achieved through automated data collection and integration systems.
+\end{enumerate}
+
+Consequently, the complex process of integrating GIS data allows users of online maps to obtain relevant, accurate and comprehensive information about the area in a user-friendly and understandable way.
+
 \section{The Future of Online Mapping} \label{future}
+Online maps are now an essential tool in our daily lives, having a significant impact on how we explore and interact with the world around us. As technology advances, they continue to evolve, offering more advanced and integrated solutions. These innovations open up new opportunities for improved navigation, which we'll explore next.
+
+\subsection{Integration of AR Technologies} \label {future:ar}
+The integration of augmented reality (AR) technologies into online maps opens a new chapter in the history of digital navigation and mapping. This merging offers the perspective of deep immersion, changing the way we interact with maps. 
+\\At its core, AR technology allows navigation pointers and information to be overlaid directly onto real-world objects seen through a smartphone screen or AR glasses. This provides a more intuitive understanding of routes, especially in complex urban environments. And, for example, more and more of the world's IT companies are already starting to present their developed glasses and VR headsets with the ability to support real-time overlaying of computer-generated images on the surrounding world. Among such campaigns are Apple with its interesting Apple Vision Pro concept and Meta with its popular Meta Quest 3 model. So the market for AR devices is not standing still, pushing the integration of mapping services around the world.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.37]{diagram7.jpg}
+	\caption{How Maps Looks through Apple Vision Pro}
+	\label{fig:apple}
+\end{figure}
+
+Users can also get detailed information about the places they look at, including historical information, restaurant or shopping reviews, public transportation schedules and more, simply by pointing their devices at objects. Travelers can use AR maps to enrich their experience by getting interactive information about attractions, routes, and cultural features of the places they visit. And an interesting feature could be the ability to display what a place looked like in the past or how it will look in the future after planned changes or construction.
+\\Integrating augmented reality (AR) technologies into online maps doesn't just add new functionality - it radically transforms the very essence of mapping. AR provides a deeper and more visually immersive experience, making maps not just navigation tools, but powerful means of interacting with the world around us.
+
+\subsection{Integration into Self-Driving Vehicles} \label{future:vehicles}
+Self-driving vehicles represent one of the most promising areas of development in modern transportation systems. Online maps play a key role in this process, as they provide autonomous vehicles with the data they need to navigate and make decisions on the road.
+\\Google's self-driving cars \cite{NovakSelfDriving} show how online maps and LiDAR sensors integrate to create safe and efficient autonomous transportation. These vehicles use Google Maps data to provide information on road conditions, speed limits, and upcoming intersections, while sensors provide information on current traffic conditions. This synergy of technologies helps improve road safety, reduce accidents and make life easier for people who, for various reasons, cannot drive.
+\\In the same way, the integration of online maps with the Internet of Things (IoT) represents a significant step in the evolution of digital navigation and urban infrastructure management. IoT devices scattered around the city, such as sensors on roads, traffic lights and parking lots, provide real-time data. This allows maps to display current traffic conditions, available parking spaces, and more. 
+\\This is how IoT allows maps to help with traffic management by analyzing traffic congestion data and suggesting alternative routes to relieve traffic flow. And collecting data on traffic conditions, weather and other factors allows maps to not only display current conditions, but also predict future changes, such as worsening weather conditions or increased traffic congestion.
+
+\subsection{Integrating AI to Create Map Data} \label{future:ai}
+In today's world, artificial intelligence (AI) technologies are advancing at an unprecedented rate, opening new horizons in many fields. One of the significant advances of AI is its ability to generate images based on textual descriptions provided by the user.
+\\It is this capability that gave rise to the idea of using AI as a tool for generating map data. Initially, this seemed like a promising approach: using AI to create maps could speed up the mapping process, making it more flexible and accessible. This approach not only implied time and resource savings, but also the ability to quickly adapt to changes in the environment, such as the construction of new roads or changes in the landscape.
+\\However, the research conducted by the team of scientists focuses on the ethical aspects of using Artificial Intelligence (AI) in cartography, with a particular focus on map generation using DALL-E 2 \cite{Kang2023}. 
+\\So, on the one hand, the use of AI can greatly speed up the map generation process. However, there are a number of ethical issues associated with the use of AI in cartography. For example, one of the main problems has been the inaccuracies observed in AI-generated maps, such as unclear and distorted boundaries between different regions. The shape of places could also be inconsistent and different in different generated maps. Another problem was pseudowords, symbols or signs that resemble country or city names, potentially leading to confusion or misinterpretation. In addition, AI-generated maps may contain fake countries, states/provinces, or counties that do not actually exist. These features could potentially lead to the spread of misinformation that could distort the public's perceptions of reality and have undesirable consequences.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.6]{diagram8.jpg}
+	\caption{Examples of AI-generated Map's Issues}
+	\label{fig:ai}
+\end{figure}
+
+Therefore, researchers have developed an AI-generated map detector based on deep learning that is capable of identifying AI-generated maps. This can help in creating trusted maps and preventing the spread of misinformation created using AI-generated maps.
+\\But don't forget that AI is capable of processing very large amounts of data very quickly. So AI analyzes data from satellites, aerial photos, and even information from users to update and refine maps. This includes changes in the landscape, new road configurations, and even temporary changes such as construction work.
+
+\subsection{Perspectives} \label{future:perspectives}
+In the future, thanks to technological innovation, online maps will become more intuitive, feature-rich, and personalized. However, this progressive development will also bring with it challenges related to data accuracy, privacy concerns, and ethical issues. Overall, the evolution of online maps will improve navigation and interactivity, but will require careful consideration of emerging challenges and risks.
+
+
 
 \section{Conclusion} \label{conclusion}
+During the exploration, we delved deeper into understanding how online maps have transitioned from simple navigational aids to complex platforms that intertwine technology, data, and user experience. These maps are not just representations of our world but have become dynamic interfaces that profoundly connect us with our surroundings, constantly opening new horizons for interaction and comprehension.
+\\Initially, as noted at the outset of our article, online maps were developed to satisfy basic navigational needs. However, as our analysis reveals, they have evolved into multifunctional platforms underpinned by complex algorithms and cutting-edge technologies. This transformation was made possible through the amalgamation of extensive data, including satellite imagery, geolocation information, and user interaction data.
+\\Throughout the development of online maps, the integration of various technologies has been a key aspect. For instance, the use of geocoding and GPS technologies has significantly enhanced the accuracy and utility of maps for end-users. Maps have evolved from static images to interactive tools that enable users to not only find locations but also receive real-time information on traffic, weather, and other crucial aspects.
+\\Modern online maps also reflect significant advancements in data analysis and processing. The development of artificial intelligence and machine learning has introduced new possibilities in interpreting and utilizing geospatial data. Thus, they provide not just location information but also assist in route planning, considering current road conditions and user preferences.
+\\Recognizing this evolution brings us to a pivotal point in our research: the importance of balancing innovation with responsibility. The development of online maps should not lead to a complication of our world perception or create new issues for users. Instead, the aim is to make these tools facilitate human interaction with the environment, making it more comprehensible and accessible.
+\\In conclusion, as we continue to develop and enhance online maps, we must strive to create tools that are not only technologically advanced but also user-friendly, safe, and beneficial to society. Such innovations have the potential to positively impact our daily lives, enriching our experience and expanding our capabilities to understand and explore the world around us. But even now, when the average person needs to find a route to a desired destination, many complex algorithms come into play. And ability of online maps to offer detailed and accurate navigation solutions is a direct result of their technological and functional development.
 
 
 \bibliography{literatura}
 \bibliographystyle{plain}
+
 \end{document}

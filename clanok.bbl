@@ -1,5 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{IBM}
+{What is LiDAR?}
+\newblock \url{https://www.ibm.com/topics/lidar}.
+
+\bibitem{Allegri2017}
+Giovanni Allegri.
+\newblock {Vector tiles, PostGIS and OpenLayers.}
+\newblock
+  \url{https://medium.com/tantotanto/vector-tiles-postgis-and-openlayers-258a3b0ce4b6},
+  October 2017.
+
 \bibitem{Bajaj2002}
 R.~Bajaj, S.L. Ranaweera, and D.P. Agrawal.
 \newblock Gps: location-tracking technology.
@@ -12,9 +23,15 @@ Franz-Josef Behr.
 \newblock In {\em {Applied geoinformatics for society and environment: Third
   international summer school and conference}}, pages 111--122, January 2010.
 
+\bibitem{Bobrich2002}
+Joachim Bobrich and Steffen Otto.
+\newblock {Augmented Maps}.
+\newblock {\em International Archives of Photogrammetry, Remote Sensing and
+  Spatial Information Sciences}, 34(4):502--505, November 2002.
+
 \bibitem{Chang2016}
 Kang-tsung Chang.
-\newblock {\em { Introduction to Geographic Information Systems (9th ed.)}}.
+\newblock {\em {Introduction to Geographic Information Systems (9th ed.)}}.
 \newblock McGraw-Hill, 2016.
 
 \bibitem{Demers2008}
@@ -75,6 +92,26 @@ Kurt Novak.
 \bibitem{NovakSelfDriving}
 Vladyslav Novak.
 \newblock {Google Self-Driving Car}.
-\newblock {\em Vinnytsia National Technical University}.
+\newblock Vinnytsia National Technical University.
+
+\bibitem{Olson2018}
+Eric Olson.
+\newblock {How Does GPS Work?}
+\newblock
+  \url{https://insights.globalspec.com/article/10315/how-does-gps-work},
+  October 2018.
+
+\bibitem{ArtcomGoogle2017}
+{United States Court of Appeals for the Federal Circuit}.
+\newblock {Art+Com Innovationpool GmbH v. Google LLC}.
+\newblock Federal Circuit, October 2017.
+
+\bibitem{Zelbo2023}
+Ian Zelbo.
+\newblock {visionOS gives us a closer look at what we’ll see with Apple
+  Vision Pro}.
+\newblock
+  \url{https://9to5mac.com/2023/06/21/visionos-gives-us-a-closer-look-at-what-well-see-with-apple-vision-pro-gallery/},
+  June 2023.
 
 \end{thebibliography}

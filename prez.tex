@@ -40,8 +40,9 @@
 
 
 \author{Anton Dmitriev}
-\institute{Slovenská Technická Univerzita v Bratislave}
-\title{Ako Funguje Vyhľadávanie Online Máp}
+\institute{Fakulta Informatiky a Informačných Technológií\\
+	Slovenská Technická Univerzita v Bratislave}
+\title{Ako Funguje Vyhľadávanie Online Máp: Technológie, Algoritmy a Vnútorná Štruktúra}
 \subtitle{\vspace{3mm} Metódy Inžinierskej Práce 2023/2024}
 \date{\today}
 
@@ -54,8 +55,17 @@
 
 
 \begin{frame}[fragile=singleslide]\frametitle{O čom to je?}
-Tento článok je informačným zdrojom, ktorý vysvetľuje aspekty online mapovania a predstavuje pohľad na zmeny, ktorými táto oblasť prešla.
-\\Motiváciou na napísanie tohto článku bol môj hlboký záujem o technologické inovácie v oblasti digitálneho kartografovania a želanie sprístupniť tieto údaje ľuďom.
+\begin{itemize}
+	\item Tento článok je informačným zdrojom, ktorý vysvetľuje aspekty online mapovania a predstavuje pohľad na zmeny, ktorými táto oblasť prešla.
+	\item Môj článok je určený pre mojich kolegov študentov alebo ľudí, ktorí sa zaujímajú o túto oblasť.
+	\item Motiváciou na napísanie tohto článku bol môj hlboký záujem o technologické inovácie v oblasti digitálneho kartografovania a želanie sprístupniť tieto údaje ľuďom.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{STU-FIIT-nfh.png}
+	\label{fig:fiit logo}
+\end{figure}
 \end{frame}
 
 
@@ -113,7 +123,7 @@ return distance[ ] previous[ ]
 \end{program}
 \end{frame}
 
-\begin{frame}[fragile=singleslide]\frametitle{Čo je to geokódovanie?}
+\begin{frame}[fragile=singleslide]\frametitle{Čo je geokódovanie?}
 \begin{columns}
 	\begin{column}{0.5\textwidth}
 	Geokódovanie je proces prevodu adries (napr. "Prokopa Veľkého 41, Bratislava, Slovensko") na geografické súradnice (zemepisnú šírku a dĺžku), ktoré možno použiť na umiestnenie značiek na mapu alebo na určenie polohy mapy.
@@ -130,7 +140,7 @@ return distance[ ] previous[ ]
 \end{columns}
 \end{frame}
 
-\begin{frame}[fragile=singleslide]\frametitle{Zisťovanie polohy: Nemôžete sa pred ňou skryť}
+\begin{frame}[fragile=singleslide]\frametitle{Zisťovanie polohy: nemôžete sa pred ňou skryť}
 Globálny polohový systém (GPS) - je satelitný systém vo vlastníctve vlády USA, ktorý poskytuje používateľom služby určovania polohy, navigácie a časovania. Systém GPS funguje vďaka trilaterácii.
 \begin{figure}[h]
 	\centering
@@ -209,7 +219,8 @@ V dnešnom svete sa technológie umelej inteligencie rozvíjajú nevídaným tem
 \section*{Zhodnotenie a ďalšia práca}
 
 \begin{frame}[fragile=singleslide]\frametitle{Zhodnotenie a ďalšia práca}
-Na záver sme sa povrchne pozreli na to, ako online mapy prešli značnými zmenami, ktoré používateľom výrazne uľahčili vyhľadávanie správnych lokalít. Vo svojej budúcej práci budem ďalej rozvíjať tému článku a zameriam sa na hlbšie štúdium algoritmov online máp. 
+Na záver sme sa povrchne pozreli na to, ako online mapy prešli značnými zmenami, ktoré používateľom výrazne uľahčili vyhľadávanie správnych lokalít. 
+\\Vo svojej budúcej práci budem ďalej rozvíjať tému článku a zameriam sa na hlbšie štúdium algoritmov online máp. 
 \end{frame}
 
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="git_image.png" alt="Article" />
+  <img src="git_image.png" alt="Article" width="500" />
 </p>
 
 <h1 align="center">

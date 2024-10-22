@@ -1,2 +1,4 @@
 ![Article](git_image.png)
-# [How Online Maps Search Works: Technologies, Algorithms and Internal Structure...](clanok.pdf)
+<h1 align="center">
+  <a href="clanok.pdf">[Read]</a>
+</h1>
